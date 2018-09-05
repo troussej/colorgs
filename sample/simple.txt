@@ -1,0 +1,80 @@
+**** Warning        Wed Jul 26 22:50:44 CEST 2017   1501102244864   /atg/dynamo/messaging/MessagingManager  Disabling rollback logging for InputDestinationConsumer in order to reduce clutter. Set disableDebugTracesForRollbacksForInputDestinationConsumer on /atg/dynamo/messaging/MessagingManager to false to re-enable for InputDestinationConsumer.
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Executing Chain: loadOrder
+<Jul 26, 2017 10:50:54 PM CEST> <Warning> <org.dozer.config.GlobalSettings> <BEA-000000> <Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.> 
+**** Warning        Wed Jul 26 22:51:19 CEST 2017   1501102279511   /atg/endeca/index/IndexingApplicationConfiguration      Will set Endeca CXF logging (org.apache.cxf.interceptor.LoggingInInterceptor and org.apache.cxf.interceptor.LoggingOutInterceptor) to level WARNING. Set cxfLogLevelOverride property of this component to null to disable, otherwise this setting will be re-applied on each index.
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Executing Chain: loadOrder
+**** trace  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Pre Chain Transaction
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction is TX_REQUIRED
+**** info  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction does exist. Using existing transaction for chain execution.
+**** warning  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Executing link: loadOrderObject
+**** error  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Pre Link Transaction
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction is TX_MANDATORY
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction does exist and will be used
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Link loadOrderObject return value: 1
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Post Link Transaction
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction is TX_MANDATORY
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction does exist and was used
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Executing link: loadPriceInfoObjectsForOrder
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Pre Link Transaction
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction is TX_MANDATORY
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction does exist and will be used
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Link loadPriceInfoObjectsForOrder return value: 1
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Post Link Transaction
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   Transaction is TX_MANDATORY
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533838   /atg/commerce/PipelineManager   Transaction does exist and was used
+**** debug  Tue Jan 26 16:35:33 CET 2016    1453822533838   /atg/commerce/PipelineManager   Last processor in chain, stopping chain execution for chain: loadOrder
+**** info   Thu Jul 27 17:49:45 CEST 2017   1501170585904   SmartCache  test31_order
+2017-10-16 15:55:43 JRebel: Watching EJB 'DMSTopic' for changes
+**** info   Mon Jul 31 10:39:16 CEST 2017   1501490356511   /newReturnReasonsData/NewReturnReasonsDataLoader    Starting loader.
+
+
+    Nucleus running, app server startup continuing
+    
+
+strPath = /atg/spring/FromSpring
+putting this into FromSpring
+startService invoked
+
+2017-10-16 17:01:42 JRebel: Reloading class 'com.decathlon.cube.commerce.returns.CubeReturnManager'.
+2017-10-16 17:02:16 JRebel: Reloading class 'com.decathlon.cube.commerce.returns.CubeReturnManager'.
+debug   Mon Oct 16 17:05:16 CEST 2017   /com/decathlon/cube/commerce/services/ReturnService About to send receiveReturnMessage for auto003_order
+debug   
+
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.__run(WebAppServletContext.java:3333)
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java)
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:120)
+[++SQLSelect++]
+SELECT tax_price_info,voucher_amount,man_adj_total
+FROM test_item_price
+WHERE item_id=?
+-- Parameters --
+p[1] = {pd} ex020_ai430080 (java.lang.String)
+[--SQLSelect--]
+
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at weblogic.servlet.provider.WlsSubjectHandle.run(WlsSubjectHandle.java:57)
+**** Error  Mon Jul 31 16:02:36 CEST 2017   1501509756583   /       at
+
+**** Error  Fri Jul 28 16:38:16 CEST 2017   1501252696943   /   Bad type for property "/com/dragons/whale/commerce/giftcard/GiftCardService.primaryPaymentGroupProvider" atg.nucleus.ConfigurationException: /com/dragons/whale/commerce/payment/session/PrimaryPaymentGroupProvider  java.lang.IllegalArgumentException: argument type mismatch
+
+
+**** Error  Thu Jul 27 09:16:20 CEST 2017   1501139780297   /atg/dynamo/servlet/dafpipeline/ActorServlet    Caused by :CONTAINER:atg.service.actor.ActorException: There was an error while trying to invoke a method.; SOURCE:java.lang.NullPointerException
+**** Error  Thu Jul 27 09:16:20 CEST 2017   1501139780297   /atg/dynamo/servlet/dafpipeline/ActorServlet        at atg.service.actor.ComponentActor.invokeMethod(ComponentActor.java:633)
+**** Error  Thu Jul 27 09:16:20 CEST 2017   1501139780297   /atg/dynamo/servlet/dafpipeline/ActorServlet        at atg.service.actor.ComponentActor.act(ComponentActor.java:400)
+**** Error  Thu Jul 27 09:16:20 CEST 2017   1501139780297   /atg/dynamo/servlet/dafpipeline/ActorServlet        at atg.service.actor.ActorChain.invokeActors(ActorChain.java:285)
+
+**** error  Tue Jan 26 16:35:33 CET 2016    1453822533837   /atg/commerce/PipelineManager   at atg.adapter.gsa.GSAItem.getPersistentPropertyValue(GSAItem.java:1349)
+
+2016-01-04 11:41:41,947 ERROR [nucleusNamespace.shop.commerce.fulfillment.shopwarehouse.schedule.ShopWarehouseReadyForReturnOrderUpdaterSchedule] Exception occured CommerceException
+CAUGHT AT:
+CONTAINER:atg.commerce.CommerceException; SOURCE:CONTAINER:atg.service.pipeline.RunProcessException: An exception was thrown from the context of the link named [updatePriceInfoObjects].; SOURCE:CONTAINER:atg.commerce.CommerceException: Saving order 997470791 failed because doing so would result in data being overwritten. This save attempt had an out of date repository item [orderPriceInfo].; SOURCE:atg.repository.ConcurrentUpdateException: no rows updated oldVersion=9 for item=orderPriceInfo:ai101115391 in GSATransaction=atg.adapter.gsa.GSATransaction@2f3565c9    thread=/atg/dynamo/service/Scheduler-reusablejobhandler-ShopWarehouseOrderReadyForReturnUpdaterSchedule transaction=TransactionImple < ac, BasicAction: a72198e:dde8:5689f8a3:3b13c8 status: ActionStatus.RUNNING >
+        at atg.commerce.order.OrderManager.updateOrder(OrderManager.java:2702)
+        at com.foo.shop.commerce.order.FoobarOrderManager.updateOrder(FoobarOrderManager.java:1122)
+        at com.foo.shop.commerce.fulfillment.shopwarehouse.schedule.ShopWarehouseReadyForReturnOrderUpdaterSchedule.processShopWarehouseOrder(ShopWarehouseReadyForReturnOrderUpdaterSchedule.java:110)
+        at com.foo.shop.commerce.fulfillment.shopwarehouse.schedule.AbstractShopWarehouseSchedule.performTask(AbstractShopWarehouseSchedule.java:88)
+        at com.foo.shop.scheduler.shopSingletonSchedulableService.doScheduledTask(shopSingletonSchedulableService.java:21)
+        at atg.service.scheduler.SingletonSchedulableService.performScheduledTask(SingletonSchedulableService.java:231)
+        at atg.service.scheduler.Scheduler$2handler.run(Scheduler.java:760)
+        at atg.service.scheduler.ScheduledJob.runJobs(ScheduledJob.java:441)
+        at atg.service.scheduler.Scheduler$2handler.run(Scheduler.java:760)
+        at atg.service.scheduler.Scheduler$2handler.run(Scheduler.java:760)
