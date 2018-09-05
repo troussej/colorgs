@@ -67,3 +67,8 @@ Added:
 
  - Level detection
  - Some basic patterns
+
+ #TODO
+
+  - read file from stdin
+  - change to node-ts
